@@ -30,6 +30,8 @@ class DetailViewController: UIViewController {
         // the .action system item displays an arrow coming out of a box
         // the action parameter is saying "when you're tapped, call the shareTapped() method," and the target parameter tells the button that the method belongs to the current view controller – self.
         // #selector tell the Swift compiler that a method called "shareTapped" will exist, and should be triggered when the button is tapped
+        
+        assert(selectedImage != nil, "selectedImage is empty")
 
         // checks and unwraps the optional in selectedImage:
         if let imageToLoad = selectedImage {
